@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mural de Recados</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topo facebook-header">
+  <div class="logo-area">
+    <img src="img/facebook.png" alt="Facebook" class="logo-fb">
+    <h1>Mural de Recados</h1>
+  </div>
+  <div class="user-area">
+    <button class="btn-adicionar" title="Adicionar novo recado">+</button>
+    <span class="user-name">Pedro Henrique</span>
+    <img src="img/usuario.png" alt="Usuário" class="user-img">
+  </div>
+</header>
+
+
+  <main id="mural" class="mural">
+    <ul id="mural-lista" class="lista" aria-live="polite"></ul>
+    <div id="mensagem-erro" class="erro" hidden></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

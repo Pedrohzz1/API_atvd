@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('img/fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #050505;
+    padding: 20px;
+}
+
+.facebook-header {
+    background-color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: #1f559d ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-fb {
+    height: 55px;
+    width: auto;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-name {
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+
+.user-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.btn-adicionar {
+    background-color: #144872;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 0;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s ease;
+}
+.btn-adicionar:hover {
+    background-color: #36a420;
+}
+
+.mural {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 18px;
+    list-style: none;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 14px;
+    box-shadow: 0 3px 8px rgba(24,119,242,0.15); 
+    border: 2px solid #000000; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    word-break: break-word;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    cursor: default;
+}
+.card:hover {
+    box-shadow: 0 6px 15px rgba(24,119,242,0.3);
+    transform: translateY(-3px);
+}
+
+.card .autor {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #050505;
+}
+.card .data {
+    font-size: 0.8rem;
+    color: #65676b;
+}
+.card .mensagem {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.erro {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffe6e6;
+    color: #a94442;
+    border: 1px solid #f5c2c2;
+    text-align: center;
+}
+
+.topo button,
+.facebook-header button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #e4e6eb;
+    color: #050505;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.topo button:hover,
+.facebook-header button:hover {
+    background: #d8dadf;
+}
+
+@media (max-width: 520px) {
+    .facebook-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .lista {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
